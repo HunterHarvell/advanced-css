@@ -1,0 +1,10 @@
+.about-me img {
+    border:5px solid black;
+    width:200px;
+    height:auto;
+}
+
+header {
+    background-color: darkslategray;
+    color: white;
+}
