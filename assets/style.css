@@ -1,10 +1,63 @@
+/* global styling */
+* {
+    font-size: 16px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5rem;
+    background-color: darkslategray;
+}
+/* styles the title of the website */
+h1 {
+    color: white;
+    background-color: black;
+    font-size: 2rem;
+    width: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* Sets the top coloring and flexbox structure for heading/nav */
+header {
+    background-color: slategrey;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+/* navigation fonts and sizing */
+.nav {
+    color: white;
+    background-color: slategray;
+    margin: 5px;
+    padding: 2px;
+    border-radius: 5px;
+
+}
+/* section heading atttributes */
+h2 {
+    color:white;
+    background-color: black;
+    font-size: 1.5rem;
+    display: inline-block;
+}
+/* Profile picture */
 .about-me img {
     border:5px solid black;
-    width:200px;
-    height:auto;
+    width: 200px;
+    height: 277px;
+    float: left;
+    vertical-align: auto;
+}
+/* gives flexbox and spacing to about me section */
+.about-me {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
 }
 
-header {
-    background-color: darkslategray;
-    color: white;
+.about-me p {
+    padding: 10px;
+    background-color: white;
 }
+
