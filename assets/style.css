@@ -9,7 +9,7 @@
 h1 {
     color: white;
     background-color: black;
-    font-size: 3rem;
+    font-size: 2rem;
     width: auto;
     margin-right: auto;
     text-align: center;
@@ -32,17 +32,16 @@ header {
     background-color: darkslategray;
     padding: 15px;
     border: 5px solid black;
-    
-
 }
 /* section heading atttributes */
 h2 {
     color:white;
     background-color: black;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     display: inline-block;
     padding: 10px;
     border-radius: 5px;
+    margin-right: auto;
 }
 /* Profile picture */
 .about-me img {
@@ -56,15 +55,18 @@ h2 {
 .about-me {
     display: flex;
     justify-content: space-around;
-    margin: 5px;
+    align-content: center;
 }
 
 .about-me p {
-    padding: 10px;
     background-color: white;
-}
+    margin: 0;
+    border: 5px solid black;
+    position: relative;
 
-.box1 {
+}
+/* first project is displayed larger than the others */
+.bigbox {
     max-width: 80%;
     margin: auto;
     border: 5px solid black;
@@ -73,13 +75,91 @@ h2 {
     font-size: 2rem;
 }
 
-.box1 img {
+.bigbox img {
     max-width: 100%;
     height: auto;
 }
-
+/* sets the style for flexbox headings */
 h3 {
     color: white;
     background-color: black;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
 }
+
+.previous-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* small box sizing */
+.smallbox {
+    width: 45%;
+    height: auto;
+}
+
+.smallbox-column {
+    min-width: 45%;
+}
+
+
+.smallbox-column a img {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    border: 5px solid black;
+}
+/* Contact me styling and placement */
+.contact-me {
+    display: inline-flex;
+    justify-content: space-around;
+    align-content: center;
+    margin-bottom: 30px;
+}
+
+.contact-me a {
+    color:white;
+    background: black;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* media query for phone sized device */
+@media screen and (min-width:576px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .nav {
+        font-size: .75rem;
+        padding: 2px;
+    }
+  }
+ /* media query for medium sized screens */
+@media screen and (min-width: 768px) {
+    .smallbox-column {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    .nav {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+  }
+  
+  /* media query for larger screens */
+@media screen and (min-width: 992px) {
+    .previous-work {
+        display:flex;
+        align-items: center;
+        margin-top: 30px;
+    }
+  }
